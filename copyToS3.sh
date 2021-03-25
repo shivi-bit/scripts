@@ -8,5 +8,5 @@ FILES=$(ls $1)
 
 for i in $FILES;
 do
-        aws s3 $1/cp $i s3://my----first----bucket;
+        aws s3 cp $1/$i s3://my----first----bucket;
 done
